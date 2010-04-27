@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Written by Patrick McKenzie, 2010.
+# I release this work unto the public domain.
+#
+# sinatra      Startup script for Sinatra server.
+# description: Starts Sinatra as an unprivileged user.
+#
+
+sudo -u www-data ruby /usr/local/jsonp2post/control.rb $1
+RETVAL=$?
+
+exit $RETVAL
